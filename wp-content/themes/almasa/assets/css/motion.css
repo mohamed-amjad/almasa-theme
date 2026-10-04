@@ -1,0 +1,48 @@
+.almasa-theme a,
+.almasa-theme button {
+  transition: color var(--almasa-duration) var(--almasa-ease),
+    background-color var(--almasa-duration) var(--almasa-ease),
+    border-color var(--almasa-duration) var(--almasa-ease),
+    opacity var(--almasa-duration) var(--almasa-ease),
+    transform var(--almasa-duration) var(--almasa-ease);
+}
+
+.almasa-js [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition: opacity var(--almasa-duration-slow) var(--almasa-ease),
+    transform var(--almasa-duration-slow) var(--almasa-ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.almasa-js [data-reveal].is-visible,
+.almasa-js .almasa-slider__track [data-reveal],
+.elementor-editor-active [data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .almasa-js [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .almasa-marquee__track {
+    animation: none;
+  }
+}

@@ -1,0 +1,60 @@
+:root {
+  --almasa-gold: #c9a227;
+  --almasa-gold-bright: #e0c36a;
+  --almasa-gold-deep: #a8851a;
+  --almasa-navy: #011b3d;
+  --almasa-navy-2: #072652;
+  --almasa-navy-deep: #00112a;
+  --almasa-ink: #0a0a0a;
+  --almasa-paper: #f4f1ea;
+  --almasa-paper-2: #ebe6da;
+  --almasa-white: #ffffff;
+  --almasa-text: #1c1c1c;
+  --almasa-text-on-dark: #f4f1ea;
+  --almasa-muted: #6e6a62;
+  --almasa-muted-on-dark: rgba(244, 241, 234, 0.68);
+  --almasa-border: #d9d2c5;
+  --almasa-border-dark: rgba(244, 241, 234, 0.14);
+  --almasa-danger: #8b1e1e;
+
+  --almasa-font-display: "Cairo", sans-serif;
+  --almasa-font-body: "IBM Plex Sans Arabic", sans-serif;
+
+  --almasa-size-hero: clamp(2.5rem, 6vw, 5rem);
+  --almasa-size-display: clamp(2rem, 4.2vw, 3.25rem);
+  --almasa-size-h1: clamp(1.75rem, 3.2vw, 2.5rem);
+  --almasa-size-h2: clamp(1.625rem, 2.8vw, 2.375rem);
+  --almasa-size-h3: clamp(1.0625rem, 1.3vw, 1.25rem);
+  --almasa-size-lead: clamp(1rem, 1.2vw, 1.1875rem);
+  --almasa-size-body: 1rem;
+  --almasa-size-small: 0.8125rem;
+  --almasa-size-button: 0.875rem;
+  --almasa-size-nav: 0.9rem;
+
+  --almasa-lh-display: 1.2;
+  --almasa-lh-body: 1.8;
+
+  --almasa-space-1: 0.25rem;
+  --almasa-space-2: 0.5rem;
+  --almasa-space-3: 0.75rem;
+  --almasa-space-4: 1rem;
+  --almasa-space-5: 1.5rem;
+  --almasa-space-6: 2rem;
+  --almasa-space-7: 3rem;
+  --almasa-space-8: 4rem;
+  --almasa-space-9: 6rem;
+  --almasa-space-10: 8rem;
+  --almasa-section-y: clamp(4.5rem, 9vw, 8rem);
+
+  --almasa-container: 80rem;
+  --almasa-header-h: 5.5rem;
+  --almasa-radius: 2px;
+  --almasa-duration: 280ms;
+  --almasa-duration-slow: 900ms;
+  --almasa-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --almasa-shadow: 0 30px 60px -30px rgba(10, 10, 10, 0.45);
+
+  --almasa-bp-md: 48rem;
+  --almasa-bp-lg: 64rem;
+  --almasa-bp-xl: 80rem;
+}

@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--almasa-header-h);
+  -webkit-text-size-adjust: 100%;
+}
+
+body.almasa-theme {
+  margin: 0;
+  font-family: var(--almasa-font-body);
+  font-size: var(--almasa-size-body);
+  line-height: var(--almasa-lh-body);
+  color: var(--almasa-text);
+  background: var(--almasa-paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body.almasa-nav-open {
+  overflow: hidden;
+}
+
+.almasa-theme h1,
+.almasa-theme h2,
+.almasa-theme h3,
+.almasa-theme h4 {
+  font-family: var(--almasa-font-display);
+  line-height: var(--almasa-lh-display);
+  font-weight: 800;
+  margin: 0 0 var(--almasa-space-4);
+}
+
+.almasa-theme p {
+  margin: 0 0 var(--almasa-space-4);
+}
+
+.almasa-theme img {
+  max-width: 100%;
+  height: auto;
+}
+
+.almasa-theme :where(a) {
+  color: inherit;
+}
+
+.almasa-theme button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.almasa-shell {
+  width: min(100% - 2.5rem, var(--almasa-container));
+  margin-inline: auto;
+}
+
+.almasa-main {
+  min-height: 50vh;
+}
+
+.almasa-theme a:focus-visible,
+.almasa-theme button:focus-visible {
+  outline: 2px solid var(--almasa-gold);
+  outline-offset: 3px;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.skip-link {
+  position: fixed;
+  inset-inline-start: var(--almasa-space-4);
+  top: -10rem;
+  background: var(--almasa-gold);
+  color: var(--almasa-ink);
+  padding: var(--almasa-space-2) var(--almasa-space-4);
+  z-index: 100001;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: var(--almasa-space-4);
+}
+
+.almasa-fallback-article {
+  padding-block: var(--almasa-space-8);
+}
+
+.almasa-meta {
+  color: var(--almasa-muted);
+  font-size: var(--almasa-size-small);
+}
+
+.almasa-prose {
+  max-width: 48rem;
+  font-size: 1.125rem;
+}
+
+.almasa-prose > *:last-child {
+  margin-bottom: 0;
+}
+
+::selection {
+  background: var(--almasa-gold);
+  color: var(--almasa-ink);
+}
